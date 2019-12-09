@@ -1,0 +1,11 @@
+<div class="product my-2 mx-3">
+  <div class="top my-3">
+    <img src="{{ product.image || '../../../../../assets/cake-1.jpg' }}" alt="product image" class="product__image">
+  </div>
+  <div class="bot">
+    <h2 class="product__title">{{ product.name }}</h2>
+    <p class="product__price">{{ product.price }}</p>
+    <app-button [text]="buttonText" [customClass]="buttonClass" (clickEvent)="handleClick(product)"></app-button>
+  </div>
+</div>
+  

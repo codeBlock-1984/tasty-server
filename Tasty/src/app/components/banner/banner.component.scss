@@ -1,0 +1,25 @@
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url('../../../assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+}
+.banner__content-wrapper {
+  height: 100%;
+}
+.banner__title {
+  margin-bottom: 40px;
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: Satisfy;
+  color: #ff7077;
+}
+.banner__text {
+  font-size: 1.2rem;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+.navbar__list {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.navbar__item {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.navbar__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffb067;
+}
+.navbar__link:hover {
+  color: #ff7077;
+}

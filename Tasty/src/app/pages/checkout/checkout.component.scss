@@ -1,0 +1,15 @@
+.checkout {
+  padding: 0px 300px;
+}
+.order__summary {
+  display: flex;
+  height: 8%;
+}
+.order__summary-title {
+  flex-basis: 60%;
+  text-align: right;
+  padding-right: 40px;
+}
+.order__summary-content {
+  flex-basis: 40%;
+}

@@ -1,0 +1,8 @@
+<app-title [title]="title"></app-title>
+<div class="container-fluid showcase__container mb-5">
+  <div class="row showcase">
+    <div *ngFor="let swatch of swatches" class="col-12 col-md-6 col-lg-3">
+      <app-swatch [swatch]="swatch"></app-swatch>
+    </div>
+  </div>
+</div>

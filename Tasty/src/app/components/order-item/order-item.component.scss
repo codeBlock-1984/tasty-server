@@ -1,0 +1,37 @@
+.order-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.order-item p {
+  margin: 0;
+}
+.order-item__name {
+  flex-basis: 50%;
+}
+.order-item__quantity {
+  flex-basis: 10%;
+  text-align: center;
+}
+.order-item__price {
+  flex-basis: 25%;
+  text-align: center;
+}
+.order-item__button {
+  margin: 0 0 0 2px;
+  padding: 0;
+}
+.order-item__button:focus {
+  box-shadow: none;
+}
+.order-item__button i {
+  font-size: 1rem;
+}
+.add {
+  color: #14d834;
+}
+.remove {
+  color: #f9f775;
+}
+.delete {
+  color: #ef1818;
+}

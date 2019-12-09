@@ -1,0 +1,28 @@
+.cart__wrapper {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #0292b753;
+  cursor: pointer;
+  animation-name: wiggle;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+.cart__tooltip-wrapper {
+  display: block;
+}
+.cart__wrapper:hover .cart__tooltip-wrapper {
+  display: block;
+}
+@keyframes wiggle {
+  0% { top: 50%; }
+  25% { top: 51%; }
+  50% { top: 50%; }
+  75% { top: 51%; }
+  100% { top: 50%; }
+}
+

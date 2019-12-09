@@ -1,0 +1,24 @@
+<app-navbar [links]="topnavLinks"></app-navbar>
+<app-mini-banner [cartItemCount]="cartItemCount"></app-mini-banner>
+<app-title [title]="title"></app-title>
+<div class="container-fluid checkout">
+  <div class="row checkout__order-summary-wrapper">
+    <div class="col checkout__order-summary">
+      <app-checkout-item *ngFor="let item of order" [checkoutItem]="item"></app-checkout-item>
+      <div class="order__summary">
+        <p class="order__summary-title">Total</p>
+        <p class="order__summary-content">{{ orderTotal }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row checkout__shipping-info-wrapper">
+    <div class="col checkout__shipping-info">
+
+    </div>
+  </div>
+  <div class="row checkout__payment-info-wrapper">
+    <div class="col checkout__payment-info">
+      
+    </div>
+  </div>
+</div>

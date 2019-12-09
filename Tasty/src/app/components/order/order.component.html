@@ -1,0 +1,21 @@
+<div class="order__wrapper">
+  <h2 class="order__title">my cart</h2>
+  <div class="order">
+    <div class="order__items-box">
+      <app-order-item
+        *ngFor="let orderItem of order"
+        [orderItem]="orderItem"
+        (addQty)="handleAdd($event)"
+        (removeQty)="handleRemove($event)"
+        (delete)="handleDelete($event)"
+      >
+      </app-order-item>
+    </div>
+    <div class="order__summary">
+      <p class="order__summary-title">Total</p>
+      <p class="order__summary-content">{{ orderTotal }}</p>
+    </div>
+    <app-button [text]="'Go back to shop'" [customClass]="'pri-btn cart-button'" (clickEvent)="handleGoToShop()"></app-button>
+    <app-button [text]="'Proceed to checkout'" [customClass]="'pri-btn cart-button'" (clickEvent)="handleCheckout()"></app-button>
+  </div>
+</div>

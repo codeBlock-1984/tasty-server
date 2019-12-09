@@ -1,0 +1,18 @@
+<div class="shop">
+  <app-alert [data]="alert"></app-alert>
+  <app-navbar [links]="topnavLinks"></app-navbar>
+  <app-mini-banner [cartItemCount]="cartItemCount"></app-mini-banner>
+  <app-title [title]="title"></app-title>
+  <app-shop-showcase [products]="showcaseItems" [title]="Shop" (clickEvent)="addToCart($event)"></app-shop-showcase>
+  <app-cart (clickEvent)="openCart()"></app-cart>
+  <app-order
+    *ngIf="cartStatus === 'open'"
+    [order]="cart"
+    (add)="handleAdd($event)"
+    (remove)="handleRemove($event)"
+    (delete)="handleDelete($event)"
+    (goToShopEvent)="goToShop()"
+    (checkoutEvent)="checkout()"
+  ></app-order>
+  <app-footer></app-footer>
+</div>

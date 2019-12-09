@@ -1,0 +1,7 @@
+<div class="container-fluid shop-showcase__container mb-5">
+  <div class="row shop-showcase">
+    <div *ngFor="let item of products" class="col-12 col-md-6 col-lg-4">
+      <app-product [product]="item" (clickEvent)="handleClick($event)"></app-product>
+    </div>
+  </div>
+</div>

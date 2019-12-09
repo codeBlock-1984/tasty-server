@@ -1,0 +1,11 @@
+<div class="container-fluid navbar__container">
+  <nav class="row navbar">
+    <div class="col navbar__box">
+      <ul class="navbar__list">
+        <li *ngFor="let link of links" class="navbar__item">
+          <a routerLink="" class="navbar__link">{{ link }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

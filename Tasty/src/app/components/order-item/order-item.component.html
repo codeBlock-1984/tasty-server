@@ -1,0 +1,15 @@
+<div class="order-item">
+  <p class="order-item__name">{{ orderItem.name }}</p>
+  <button class="btn order-item__button add" (click)="addQuantity(orderItem)">
+    <i class="fas fa-plus-square add"></i>
+  </button>
+  <p class="order-item__quantity">{{ orderItem.quantity }}</p>
+  <button class="btn order-item__button remove" (click)="removeQuantity(orderItem)">
+    <i class="fas fa-minus-square remove"></i>
+  </button>
+  <p class="order-item__price">{{ orderItem.price * orderItem.quantity }}</p>
+  <button class="btn order-item__button delete" (click)="deleteItem(orderItem)">
+    <i class="fas fa-trash delete"></i>
+  </button>
+</div>
+ 

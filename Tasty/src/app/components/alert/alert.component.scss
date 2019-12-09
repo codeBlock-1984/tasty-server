@@ -1,0 +1,27 @@
+.alert {
+  max-width: 100%;
+  position: fixed;
+  top: 45px;
+  right: 0;
+  z-index: 5;
+  padding: 10px;
+}
+.alert__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.alert__text {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+.success {
+  background-color: #40e070c7;
+}
+.error {
+  background-color: #dd5f5ac7;
+}
+.info {
+  background-color: #e0c840c7;
+}

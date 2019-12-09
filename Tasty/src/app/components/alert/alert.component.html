@@ -1,0 +1,4 @@
+<div *ngIf="data" class="alert {{ data.customClass }}">
+  <h2 *ngIf="data.message.title" class="alert__title">{{ data.message.title }}</h2>
+  <p class="alert__text">{{ data.message.text }}</p>
+</div>

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Satisfy';
+  src: url('./assets/fonts/Satisfy/Satisfy-Regular.ttf');
+}
+@font-face {
+  font-family: 'Sacramento';
+  src: url('./assets/fonts/Sacramento/Sacramento-Regular.ttf');
+}
+
+html,
+body {
+  width: 100%;
+  font-family: 'Lato', 'Open Sans' !important;
+  color: #333333 !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
